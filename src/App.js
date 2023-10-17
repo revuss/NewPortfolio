@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import AboutMain from "./componets/About/aboutMain";
+import Lenis from "@studio-freight/lenis";
+import HomePage from "./componets/Home/homePage";
+import { useEffect } from "react";
+import ContactForm from "./componets/Contact/contactForm";
+import SkillsPage from "./componets/Skills/skillsPage";
+import ProjectMain from "./componets/Projects/projectMain";
 
 function App() {
+  useEffect(() => {
+    const lenis = new Lenis({
+      direction: "horizontal",
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+  });
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HomePage />
+      <AboutMain />
+      <SkillsPage />
+      <ProjectMain />
+      <ContactForm />
     </div>
   );
 }

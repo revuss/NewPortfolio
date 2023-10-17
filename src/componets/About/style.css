@@ -1,0 +1,152 @@
+.container {
+  width: 95%;
+  margin: auto;
+}
+
+section {
+  padding: 50px 0;
+  scroll-snap-align: start;
+}
+
+.col {
+  width: 50%;
+}
+
+#vertical {
+  height: 464vh;
+  width: 100vw;
+  display: flex;
+}
+
+.vertical_content {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.vertical_content .col_left {
+  top: 0;
+  flex: 1;
+  position: sticky;
+}
+.vertical_content .col_right {
+  width: 70%;
+}
+
+h2 {
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 85%;
+}
+
+h2 span {
+  display: block;
+}
+
+@media screen and (min-width: 370px) {
+  /* CSS rules for smaller screens */
+  #vertical {
+    height: 420vh;
+    width: 100vw;
+    display: flex;
+  }
+}
+@media screen and (min-width: 360px) {
+  /* CSS rules for smaller screens */
+  #vertical {
+    height: 400vh;
+    width: 100vw;
+    display: flex;
+  }
+}
+@media screen and (min-width: 390px) {
+  /* CSS rules for smaller screens */
+  #vertical {
+    height: 330vh;
+    width: 100vw;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 410px) {
+  /* CSS rules for smaller screens */
+  #vertical {
+    height: 320vh;
+    width: 100vw;
+    display: flex;
+  }
+}
+@media screen and (min-width: 412px) {
+  /* CSS rules for smaller screens */
+  #vertical {
+    height: 300vh;
+    width: 100vw;
+    display: flex;
+  }
+}
+@media screen and (min-width: 820px) {
+  /* CSS rules for smaller screens */
+  #vertical {
+    height: 180vh;
+    width: 100vw;
+    display: flex;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* CSS rules for smaller screens */
+  #vertical {
+    height: 220vh;
+    width: 100vw;
+    display: flex;
+  }
+}
+@media screen and (min-width: 912px) {
+  /* CSS rules for smaller screens */
+  #vertical {
+    height: 200vh;
+    width: 100vw;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 540px) {
+  /* CSS rules for smaller screens */
+  #vertical {
+    height: 340vh;
+    width: 100vw;
+    display: flex;
+  }
+}
+@media screen and (min-width: 280px) {
+  /* CSS rules for smaller screens */
+  #vertical {
+    height: 550vh;
+    width: 100vw;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 412px) {
+  /* CSS rules for smaller screens */
+  #vertical {
+    height: 290vh;
+    width: 100vw;
+    display: flex;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* CSS rules for smaller screens */
+  #vertical {
+    height: 380vh;
+    width: 100vw;
+    display: flex;
+  }
+}
+@media screen and (min-width: 1920px) {
+  /* CSS rules for smaller screens */
+  #vertical {
+    height: 300vh;
+    width: 100vw;
+    display: flex;
+  }
+}
