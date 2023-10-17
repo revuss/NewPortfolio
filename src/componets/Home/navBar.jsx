@@ -5,22 +5,11 @@ import { useEffect } from "react";
 const NavBar = () => {
   const pdfURL = "../../images/resume.pdf"; // Replace with the actual path to your PDF file
 
-  const openPDF = () => {
-    // Open the PDF in a new tab
-    window.open(pdfURL, "_blank");
-
-    // Alternatively, to prompt the user to download the PDF:
-    // window.location.href = pdfURL;
-  };
-  const containerRef = useRef(null);
-  const scrollToItem = (itemRef) => {
-    itemRef.current.scrollIntoView({ behavior: "smooth" });
-  };
   useEffect(() => {
     initFlowbite();
   }, []);
   return (
-    <div ref={containerRef}>
+    <div>
       <nav class="py-10 text-sa">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto  p-4">
           <a href="/" class="flex items-center">
@@ -75,8 +64,6 @@ const NavBar = () => {
 
               <li>
                 <a
-                  href={pdfURL}
-                  onClick={openPDF}
                   target="new"
                   class="block py-2 pl-3 pr-4 text-sa rounded hover:bg-gray-800 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >

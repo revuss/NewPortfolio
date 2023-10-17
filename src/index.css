@@ -6,6 +6,7 @@ body {
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-overflow-scrolling: touch;
   background-color: #111926;
   scroll-snap-type: y mandatory;
   overflow: hidden;
