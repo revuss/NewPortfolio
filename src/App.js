@@ -25,7 +25,7 @@ function App() {
       <HomePage />
       <AboutMain />
       <SkillsPage />
-      <ProjectMain id="id1" />
+      <ProjectMain />
       <ContactForm />
     </div>
   );
