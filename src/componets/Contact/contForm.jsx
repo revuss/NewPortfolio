@@ -20,6 +20,9 @@ const ContForm = () => {
       .then(
         (result) => {
           console.log(result.text);
+          setname("");
+          setemail("");
+          setmessage("");
         },
         (error) => {
           console.log(error.text);
