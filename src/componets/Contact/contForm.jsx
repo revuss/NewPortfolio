@@ -1,5 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
+import Swal from "sweetalert2";
+
 const ContForm = () => {
   const [name, setname] = useState("");
   const [email, setemail] = useState("");
@@ -20,6 +22,12 @@ const ContForm = () => {
       .then(
         (result) => {
           console.log(result.text);
+          Swal.fire({
+            icon: "success",
+            title: name + " your message sent",
+            showConfirmButton: false,
+            timer: 1500,
+          });
           setname("");
           setemail("");
           setmessage("");
