@@ -3,7 +3,7 @@ import Inside from "./inside";
 
 const ProjectMain = () => {
   return (
-    <div>
+    <div id="projectPageID">
       <div className="h-96"></div>
       <div className=" flex  justify-center items-center ">
         <div class="max-w-screen-lg mb-8 lg:mb-16">

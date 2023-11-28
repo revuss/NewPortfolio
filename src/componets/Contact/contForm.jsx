@@ -42,7 +42,7 @@ const ContForm = () => {
     <div>
       <section>
         <div>
-          <form class="space-y-6" ref={form} onSubmit={sendEmail}>
+          <form class="space-y-5" ref={form} onSubmit={sendEmail}>
             <div>
               <label
                 for="email"
